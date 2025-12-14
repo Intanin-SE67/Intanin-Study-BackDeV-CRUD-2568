@@ -1,0 +1,89 @@
+///Read
+###
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/roles
+
+=============================================================
+//Read
+###
+GET http://localhost:3000/api/roles/1
+
+###
+///Create
+POST http://localhost:3000/api/roles
+Content-Type: application/json
+
+{
+    "name": "Tester01"
+}
+
+###
+///Delete
+DELETE http://localhost:3000/api/roles/Tester01
+
+=============================================================
+###
+GET http://localhost:3000/api/users/1
+
+###
+GET http://localhost:3000/api/users/3
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "user02",
+    "password": "user1234",
+    "firstname": "user02firstname",
+    "lastname": "user02lastname"
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "password": "user1234",
+    "firstname": "user01Firstname",
+    "lastname": "user01Lastname"
+}
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "product_id": "12345",
+    "p_name": "Potatoes PC",
+    "sell_price": 165.75,
+    "cost_price": 125.25,
+    "note" : "meow"
+}
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "product_id": "4567",
+    "p_name": "Potatoes PC",
+    "sell_price": 165.75,
+    "cost_price": 125.25,
+    "note" : "meow"
+}
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "product_id": "45678",
+    "p_name": "Pot",
+    "sell_price": 165.75,
+    "cost_price": 125.25,
+    "note" : "meow"
+}
+
